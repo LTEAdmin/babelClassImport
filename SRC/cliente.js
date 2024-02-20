@@ -1,3 +1,5 @@
+import Impuesto from "./impuesto.js"
+
 class Cliente{
     constructor(nombre, impuesto) {
         this._nombre = nombre;
@@ -13,3 +15,4 @@ class Cliente{
     
     
 }
+export default Cliente

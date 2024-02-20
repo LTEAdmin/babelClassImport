@@ -16,3 +16,4 @@ class Impuestos{
         this._deduccion = deduccion;
     }
 }
+export default Impuestos
