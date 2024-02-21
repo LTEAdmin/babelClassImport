@@ -1,3 +1,4 @@
+
 class Impuestos{
     constructor(mBruto, deduccion) {
         this._mBruto = mBruto;

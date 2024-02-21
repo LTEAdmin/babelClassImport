@@ -1,4 +1,4 @@
-import Impuesto from "./impuesto.js";
+import Impuesto from "../src/impuesto.js"
 
 class Cliente{
   
