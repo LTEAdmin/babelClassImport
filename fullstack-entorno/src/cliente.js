@@ -1,10 +1,11 @@
 import Impuesto from "../src/impuesto.js"
 
-class Cliente{
-  
-    constructor(nombre, impuesto) {
+export class Cliente{
+    debugger;
+    constructor(nombre, nimpuesto) {
+        debugger;
         this._nombre = nombre;
-        this._impuesto = impuesto;        
+        this._impCliente = nimpuesto;        
     }
     get nombre(){
         return this._nombre;
@@ -14,6 +15,16 @@ class Cliente{
         this._nombre = nombre;
     }
     
+    get impCliente(){
+        return this._impCliente;
+    }
+    set impCliente(nimpuesto) {
+        this._impCliente = nimpuesto;
+    }
+    
+    get impPagar() {
+        return (this.impCliente.mBruto - this.impCliente.deduccion) * 0.21;
+    }
     
 }
 export default Cliente
